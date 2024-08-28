@@ -61,10 +61,10 @@ const mongoose = require("mongoose");
 
 const connectDB = async () => {
   try {
-    const mongoURI = process.env.MONGODB_URI;
+    const mongoURI = process.env.MONGO_URI; // Updated to match the .env file
 
     if (!mongoURI) {
-      throw new Error("MONGODB_URI is not defined in environment variables");
+      throw new Error("MONGO_URI is not defined in environment variables");
     }
 
     await mongoose.connect(mongoURI);
@@ -76,3 +76,4 @@ const connectDB = async () => {
 };
 
 module.exports = connectDB;
+
