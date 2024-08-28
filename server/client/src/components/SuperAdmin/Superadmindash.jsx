@@ -8656,7 +8656,7 @@ import EditOrganizationModal from "./EditOrganizationModal.jsx";
 import ViewOrganizationModal from "./ViewOrganizationModal.jsx";
 import loginLogo from "../Public/login.png";
 
-// Base URL for API requests
+// Update the API_BASE_URL
 const API_BASE_URL = process.env.REACT_APP_API_BASE_URL || 'http://localhost:5000';
 
 const SuccessModal = ({ showSuccessModal, handleClose }) => {
@@ -9024,7 +9024,7 @@ const Superadmindash = () => {
             className="founder superadmindash-founder"
             style={{ fontSize: "24px" }}
           >
-            Super Admin
+             Super Admin
           </span>
 
           <div className="profile-section superadmindash-profile-section">
