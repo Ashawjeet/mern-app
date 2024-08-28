@@ -244,7 +244,7 @@ const AddOrganizationModal = ({ showModal, handleClose, handleSuccess }) => {
         },
       };
       const response = await axios.post(
-        "http://localhost:5000/api/organizations",
+        "https://mern-app-20ia.onrender.com/api/organizations",
         formData,
         config
       );

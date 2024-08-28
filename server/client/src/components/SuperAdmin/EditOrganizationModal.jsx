@@ -26,7 +26,7 @@ const EditOrganizationModal = ({
             },
           };
           const response = await axios.get(
-            `http://localhost:5000/api/organizations/${organizationId}`,
+            `https://mern-app-20ia.onrender.com/api/organizations/${organizationId}`,
             config
           );
           const data = response.data;
@@ -63,7 +63,7 @@ const EditOrganizationModal = ({
         },
       };
       const response = await axios.put(
-        `http://localhost:5000/api/organizations/${organizationId}`,
+        `https://mern-app-20ia.onrender.com/api/organizations/${organizationId}`,
         updatedData,
         config
       );
