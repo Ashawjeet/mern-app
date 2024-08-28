@@ -8109,7 +8109,7 @@ const Superadmindash = () => {
         },
       };
       const response = await axios.get(
-        "https://mern-app-20ia.onrender.com/api/superadmins/me",
+        "http://localhost:5000/api/superadmins/me",
         config
       );
       setSuperAdminDetails(response.data);
@@ -8127,7 +8127,7 @@ const Superadmindash = () => {
         },
       };
       const response = await axios.get(
-        "https://mern-app-20ia.onrender.com/api/organizations",
+        "http://localhost:5000/api/organizations",
         config
       );
       // Sort by lastModified field
@@ -8202,7 +8202,7 @@ const Superadmindash = () => {
           },
         };
         const response = await axios.put(
-          `https://mern-app-20ia.onrender.com/api/disableOrganization/${adminId}`,
+          `http://localhost:5000/api/disableOrganization/${adminId}`,
           {},
           config
         );
