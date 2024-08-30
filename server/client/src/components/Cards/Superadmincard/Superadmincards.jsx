@@ -1943,19 +1943,19 @@ const Superadmincards = () => {
         inactiveProgramManagers,
       ] = await Promise.all([
         axios.get(
-          "https://mern3-9rgs.onrender.com/api/organizations/active",
+          "https://mern-app-20ia.onrender.com/api/organizations/active",
           config
         ),
         axios.get(
-          "https://mern3-9rgs.onrender.com/api/organizations/inactive",
+          "https://mern-app-20ia.onrender.com/api/organizations/inactive",
           config
         ),
         axios.get(
-          "https://mern3-9rgs.onrender.com/api/programmanagers/active",
+          "https://mern-app-20ia.onrender.com/api/programmanagers/active",
           config
         ),
         axios.get(
-          "https://mern3-9rgs.onrender.com/api/programmanagers/inactive",
+          "https://mern-app-20ia.onrender.com/api/programmanagers/inactive",
           config
         ),
       ]);
@@ -1980,7 +1980,7 @@ const Superadmincards = () => {
         },
       };
       const response = await axios.get(
-        "https://mern3-9rgs.onrender.com/api/superadmins/me",
+        "https://mern-app-20ia.onrender.com/api/superadmins/me",
         config
       );
       setSuperAdminDetails(response.data);
