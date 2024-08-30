@@ -74,7 +74,7 @@ const ViewOrganizationModal = ({ showModal, handleClose, organizationId }) => {
       }
     };
     try {
-      const response = await axios.get(`https://mern3-9rgs.onrender.com/api/organizations/${organizationId}`, config);
+      const response = await axios.get(`https://mern-app-20ia.onrender.com/api/organizations/${organizationId}`, config);
       setOrganizationDetails(response.data);
     } catch (error) {
       console.error('Failed to fetch organization details:', error);

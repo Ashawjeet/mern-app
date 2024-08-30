@@ -335,7 +335,7 @@ const EditProgramManagerModal = ({
             },
           };
           const response = await axios.get(
-            `http://localhost:5000/api/programmanagers/${programManagerId}`,
+            `https://mern-app-20ia.onrender.com/api/programmanagers/${programManagerId}`,
             config
           );
           const data = response.data;
@@ -370,7 +370,7 @@ const EditProgramManagerModal = ({
         },
       };
       const response = await axios.put(
-        `http://localhost:5000/api/programmanagers/${programManagerId}`,
+        `https://mern-app-20ia.onrender.com/api/programmanagers/${programManagerId}`,
         updatedData,
         config
       );

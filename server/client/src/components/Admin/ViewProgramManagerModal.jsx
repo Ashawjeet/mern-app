@@ -19,7 +19,7 @@ const ViewProgramManagerModal = ({ showModal, handleClose, programManagerId }) =
       },
     };
     try {
-      const response = await axios.get(`http://localhost:5000/api/programmanagers/${programManagerId}`, config);
+      const response = await axios.get(`https://mern-app-20ia.onrender.com/api/programmanagers/${programManagerId}`, config);
       setProgramManagerDetails(response.data);
     } catch (error) {
       console.error('Failed to fetch program manager details:', error);
