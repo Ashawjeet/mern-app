@@ -494,7 +494,7 @@ const AddProgramManagerModal = ({ showModal, handleClose, handleSuccess }) => {
         );
         console.log("Data:", formData);
         const response = await axios.post(
-          "https://mern-app-20ia.onrender.com//api/programmanagers",
+          "https://mern-app-20ia.onrender.com/api/programmanagers",
           formData,
           config
         );
