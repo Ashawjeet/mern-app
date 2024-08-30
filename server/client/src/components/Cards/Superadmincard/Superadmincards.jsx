@@ -1942,10 +1942,22 @@ const Superadmincards = () => {
         activeProgramManagers,
         inactiveProgramManagers,
       ] = await Promise.all([
-        axios.get("https://mern3-9rgs.onrender.com/api/organizations/active", config),
-        axios.get("https://mern3-9rgs.onrender.com/api/organizations/inactive", config),
-        axios.get("https://mern3-9rgs.onrender.com/api/programmanagers/active", config),
-        axios.get("https://mern3-9rgs.onrender.com/api/programmanagers/inactive", config),
+        axios.get(
+          "https://mern3-9rgs.onrender.com/api/organizations/active",
+          config
+        ),
+        axios.get(
+          "https://mern3-9rgs.onrender.com/api/organizations/inactive",
+          config
+        ),
+        axios.get(
+          "https://mern3-9rgs.onrender.com/api/programmanagers/active",
+          config
+        ),
+        axios.get(
+          "https://mern3-9rgs.onrender.com/api/programmanagers/inactive",
+          config
+        ),
       ]);
 
       setCardDetails({
@@ -2040,7 +2052,7 @@ const Superadmincards = () => {
             className="card-founder"
             style={{ fontSize: "24px", fontWeight: "700" }}
           >
-           Super Admin
+            Super Admin
           </span>
 
           <div className="card-profile-section">
